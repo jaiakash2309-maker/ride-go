@@ -76,7 +76,7 @@ const VehicleCard = ({ vehicle, onBook }: VehicleCardProps) => {
 
         <div className="flex items-center justify-between border-t border-border pt-4">
           <div>
-            <span className="text-2xl font-bold text-foreground">${vehicle.price}</span>
+            <span className="text-2xl font-bold text-foreground">₹{vehicle.price.toLocaleString('en-IN')}</span>
             <span className="text-sm text-muted-foreground">/day</span>
           </div>
           <Button 

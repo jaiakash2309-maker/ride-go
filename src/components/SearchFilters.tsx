@@ -71,12 +71,14 @@ const SearchFilters = ({
             </div>
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Locations</SelectItem>
-            <SelectItem value="Downtown">Downtown</SelectItem>
-            <SelectItem value="Airport">Airport</SelectItem>
-            <SelectItem value="City Center">City Center</SelectItem>
-            <SelectItem value="Beach Area">Beach Area</SelectItem>
-            <SelectItem value="Mountain View">Mountain View</SelectItem>
+            <SelectItem value="all">All Cities</SelectItem>
+            <SelectItem value="Mumbai">Mumbai</SelectItem>
+            <SelectItem value="Delhi">Delhi</SelectItem>
+            <SelectItem value="Bangalore">Bangalore</SelectItem>
+            <SelectItem value="Chennai">Chennai</SelectItem>
+            <SelectItem value="Pune">Pune</SelectItem>
+            <SelectItem value="Hyderabad">Hyderabad</SelectItem>
+            <SelectItem value="Kolkata">Kolkata</SelectItem>
           </SelectContent>
         </Select>
 
@@ -86,9 +88,9 @@ const SearchFilters = ({
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="all">Any Price</SelectItem>
-            <SelectItem value="0-100">$0 - $100</SelectItem>
-            <SelectItem value="100-150">$100 - $150</SelectItem>
-            <SelectItem value="150+">$150+</SelectItem>
+            <SelectItem value="0-1500">₹0 - ₹1,500</SelectItem>
+            <SelectItem value="1500-3000">₹1,500 - ₹3,000</SelectItem>
+            <SelectItem value="3000+">₹3,000+</SelectItem>
           </SelectContent>
         </Select>
       </div>
