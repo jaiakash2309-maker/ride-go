@@ -27,12 +27,12 @@ const Index = () => {
         location === "all" || vehicle.location === location;
 
       let matchesPrice = true;
-      if (priceRange === "0-100") {
-        matchesPrice = vehicle.price <= 100;
-      } else if (priceRange === "100-150") {
-        matchesPrice = vehicle.price > 100 && vehicle.price <= 150;
-      } else if (priceRange === "150+") {
-        matchesPrice = vehicle.price > 150;
+      if (priceRange === "0-1500") {
+        matchesPrice = vehicle.price <= 1500;
+      } else if (priceRange === "1500-3000") {
+        matchesPrice = vehicle.price > 1500 && vehicle.price <= 3000;
+      } else if (priceRange === "3000+") {
+        matchesPrice = vehicle.price > 3000;
       }
 
       return matchesSearch && matchesType && matchesLocation && matchesPrice;

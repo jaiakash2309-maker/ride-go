@@ -217,13 +217,13 @@ const BookingModal = ({ vehicle, isOpen, onClose }: BookingModalProps) => {
                 <div className="rounded-lg bg-secondary/50 p-4">
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-muted-foreground">
-                      ${vehicle.price} × {totalDays} days
+                      ₹{vehicle.price.toLocaleString('en-IN')} × {totalDays} days
                     </span>
-                    <span className="font-medium">${totalPrice}</span>
+                    <span className="font-medium">₹{totalPrice.toLocaleString('en-IN')}</span>
                   </div>
                   <div className="mt-2 flex items-center justify-between border-t border-border pt-2">
                     <span className="font-semibold">Total</span>
-                    <span className="text-xl font-bold text-primary">${totalPrice}</span>
+                    <span className="text-xl font-bold text-primary">₹{totalPrice.toLocaleString('en-IN')}</span>
                   </div>
                 </div>
               )}
