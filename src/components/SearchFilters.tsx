@@ -63,24 +63,10 @@ const SearchFilters = ({
           </SelectContent>
         </Select>
 
-        <Select value={location} onValueChange={onLocationChange}>
-          <SelectTrigger className="bg-secondary/50 border-border/50">
-            <div className="flex items-center gap-2">
-              <MapPin className="h-4 w-4" />
-              <SelectValue placeholder="Location" />
-            </div>
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="all">All Cities</SelectItem>
-            <SelectItem value="Mumbai">Mumbai</SelectItem>
-            <SelectItem value="Delhi">Delhi</SelectItem>
-            <SelectItem value="Bangalore">Bangalore</SelectItem>
-            <SelectItem value="Chennai">Chennai</SelectItem>
-            <SelectItem value="Pune">Pune</SelectItem>
-            <SelectItem value="Hyderabad">Hyderabad</SelectItem>
-            <SelectItem value="Kolkata">Kolkata</SelectItem>
-          </SelectContent>
-        </Select>
+        <div className="flex items-center gap-2 rounded-md bg-secondary/50 border border-border/50 px-3 py-2">
+          <MapPin className="h-4 w-4 text-primary" />
+          <span className="text-sm font-medium">Chennai</span>
+        </div>
 
         <Select value={priceRange} onValueChange={onPriceChange}>
           <SelectTrigger className="bg-secondary/50 border-border/50">
